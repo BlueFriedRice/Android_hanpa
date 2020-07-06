@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/hanpa_main"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mainr_cut"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="언어선택"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/MainActivity_Spinner"
+            android:background="@drawable/hanpa_spinner"
+            android:layout_width="150dp"
+            android:layout_height="35dp">
+        </Spinner>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_arrow_drop_down"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/Dicli"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/MainActivity_Button_Dic"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/selector_dicbtn" />
+                <TextView
+                    android:id="@+id/dictext"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="한파사전"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Voiceli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/MainActivity_Button_Voice"
+                    android:background="@drawable/selector_voicebtn"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <TextView
+                    android:id="@+id/voicetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="음성인식"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Gameli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/MainActivity_Button_Game"
+                    android:background="@drawable/selector_gamebtn"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <TextView
+                    android:id="@+id/gametext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="게임시작"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="4.5"
+        android:gravity="bottom">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="2dp"
+            android:id="@+id/floatingActionButton"
+            android:layout_gravity="right"
+            android:backgroundTint="@color/signitureColorDark"
+            app:fabSize="auto"
+            app:srcCompat="@drawable/help"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+

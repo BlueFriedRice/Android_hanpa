@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- selector가 눌렸을때 @drawable/voicer 를 보여준다.-->
+    <item android:state_pressed="true" android:drawable="@drawable/voicer"/>
+
+    <!-- selector가 눌리지 않았을때 @drawable/voicel 를 보여준다.-->
+    <item android:state_pressed="false" android:drawable="@drawable/voiceb"/>
+
+</selector>
